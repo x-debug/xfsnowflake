@@ -26,7 +26,7 @@ SF Sf_create(int data_center_id, int worker_id) {
         return NULL;
     }
 
-    SF sf = malloc(sizeof(SF));
+    SF sf = malloc(sizeof(Snowflake));
     sf->data_center_id = data_center_id;
     sf->worker_id = worker_id;
     sf->timestamp = sf->stat.count = sf->stat.beyond = sf->number = 0;
